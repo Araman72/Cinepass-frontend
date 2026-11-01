@@ -245,7 +245,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             <div className="hero-backdrop-spider"></div>
             <div className="hero-container">
               <div className="hero-poster-card" id="heroPoster">
-                <img src="/public/spiderman.jpg" alt="Spider-Man" />
+                <img src="/spiderman.jpg" alt="Spider-Man" />
                 <div className="poster-reflection"></div>
               </div>
 
@@ -304,7 +304,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             <div className="hero-backdrop-mirzapur"></div>
             <div className="hero-container">
               <div className="hero-poster-card">
-                <img src="/public/mirzapur_movie.jpg" alt="Mirzapur" />
+                <img src="/mirzapur_movie.jpg" alt="Mirzapur" />
                 <div className="poster-reflection"></div>
               </div>
 
