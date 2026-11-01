@@ -816,7 +816,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             {[
               { id: 'joker', img: '/joker.jpg', title: 'Joker: Folie à Deux', release: 'Releasing Oct 4', censor: 'A', specs: 'English, Hindi' },
               { id: 'venom', img: '/venom.jpg', title: 'Venom: The Last Dance', release: 'Releasing Oct 25', censor: 'UA', specs: 'English, Hindi, Telugu' },
-              { id: 'gladiator', img: '/gladiator.jpg', title: 'Gladiator II', release: 'Releasing Nov 22', censor: 'A', specs: 'English, Hindi' }
+              { id: 'gladiator', img:'/gladiator.jpg', title: 'Gladiator II', release: 'Releasing Nov 22', censor: 'A', specs: 'English, Hindi' }
             ].map((mov) => (
               <div key={mov.id} className="coming-card">
                 <img src={mov.img} alt={mov.title} />
