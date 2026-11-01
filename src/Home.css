@@ -1394,49 +1394,64 @@ button {
   }
 
   /* Hero Section Adjustments */
+  @media screen and (max-width: 768px) {
+  /* 1. Stack the layout vertically and center everything */
   .hero-container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 80px 20px 40px; /* Adjust top padding for navbar */
+    padding: 40px 20px; /* Adds breathing room on the sides */
     gap: 20px;
   }
 
-  /* Shrink poster slightly and center it */
+  /* 2. Shrink the movie poster slightly for mobile */
   .hero-poster-card {
-    max-width: 220px;
+    max-width: 200px;
+    width: 100%;
     margin: 0 auto;
   }
 
+  /* 3. Center the studio badges (Marvel / SV Studio) */
   .hero-studio-row {
     justify-content: center;
   }
 
-  /* Allow badges to wrap naturally on small screens */
-  .hero-badges, .hero-meta {
+  /* 4. Scale down the movie title */
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin: 12px 0;
+  }
+
+  /* 5. Allow the format tags (3D, 4DX) and meta info (Duration, Genre) to wrap to the next line safely */
+  .hero-badges, 
+  .hero-meta {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
   }
 
-  .hero-title {
-    font-size: 2rem; /* Slightly smaller title for mobile */
-  }
-
-  /* Stack CTA buttons */
+  /* 6. Stack the Action Buttons (Book Tickets & Watch Trailer) */
   .hero-cta-group {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 15px;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  /* 7. Make buttons full-width for easier tapping */
+  .hero-cta-group a {
+    width: 100%;
+    display: block;
   }
 
   .hero-cta-group button {
     width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
-@media screen and (max-width: 768px) {
-  .nav-collapsible .nav-link,
-  .nav-collapsible .nav-search input {
-    color: #ffffff; 
-  }
 }
