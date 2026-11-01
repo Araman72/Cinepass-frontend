@@ -1334,3 +1334,109 @@ button {
     grid-template-columns: 1fr;
   }
 }
+/* Mobile Menu Button - Hidden on Desktop */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+/* ================= MOBILE RESPONSIVENESS ================= */
+@media screen and (max-width: 768px) {
+  /* Navbar Adjustments */
+  .mobile-menu-btn {
+    display: block; /* Show hamburger icon */
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  /* Dropdown setup for Links and Search */
+  .nav-collapsible {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a; /* Match your navbar bg color here */
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .nav-collapsible.open {
+    max-height: 500px; /* Arbitrary large number to reveal content */
+    padding: 20px;
+    border-top: 1px solid #333;
+  }
+
+  .nav-search {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  /* Hero Section Adjustments */
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px 40px; /* Adjust top padding for navbar */
+    gap: 20px;
+  }
+
+  /* Shrink poster slightly and center it */
+  .hero-poster-card {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .hero-studio-row {
+    justify-content: center;
+  }
+
+  /* Allow badges to wrap naturally on small screens */
+  .hero-badges, .hero-meta {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-title {
+    font-size: 2rem; /* Slightly smaller title for mobile */
+  }
+
+  /* Stack CTA buttons */
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .hero-cta-group button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-collapsible .nav-link,
+  .nav-collapsible .nav-search input {
+    color: #ffffff; 
+  }
+}

@@ -11,7 +11,7 @@ function AdminDashboard({ user, onLogout, onGoHome }) {
     setLoading(true);
     setErrorMsg('');
     try {
-      const response = await fetch('http://localhost:5000/api/users');
+     const response = await fetch('https://cinepass-backend-1.onrender.com/api/users');
       const data = await response.json();
       if (!response.ok) throw new Error(data.message || 'Failed to fetch users');
       setUsersList(data);
