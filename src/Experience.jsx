@@ -52,7 +52,7 @@ function Experience() {
 
     <article className="movie-card ex">
               <div className="card-thumb">
-                <img src="/theater.jpg" alt="Toxic" />
+                <img src="/thet.jpg" alt="Toxic" />
                 <div className="rating-badge">
                   <i className="fa-solid fa-star"></i> 6.8/10
                 </div>
