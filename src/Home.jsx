@@ -363,7 +363,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             <div className="hero-backdrop-toxic"></div>
             <div className="hero-container">
               <div className="hero-poster-card">
-                <img src="/public/Toxic_movie.jpg" alt="Toxic" />
+                <img src="/Toxic_movie.jpg" alt="Toxic" />
                 <div className="poster-reflection"></div>
               </div>
 
@@ -422,7 +422,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             <div className="hero-backdrop-drishyam"></div>
             <div className="hero-container">
               <div className="hero-poster-card">
-                <img src="/public/drishyam.jpg" alt="Drishyam" />
+                <img src="/drishyam.jpg" alt="Drishyam" />
                 <div className="poster-reflection"></div>
               </div>
 
@@ -531,7 +531,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             {/* Movie 1 */}
             <article className="movie-card">
               <div className="card-thumb">
-                <img src="/public/Toxic_movie.jpg" alt="Toxic" />
+                <img src="/Toxic_movie.jpg" alt="Toxic" />
                 <div className="rating-badge">
                   <i className="fa-solid fa-star"></i> 6.8/10
                 </div>
@@ -556,7 +556,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             {/* Movie 2 */}
             <article className="movie-card">
               <div className="card-thumb">
-                <img src="/public/mirzapur_movie.jpg" alt="Mirzapur" />
+                <img src="/mirzapur_movie.jpg" alt="Mirzapur" />
                 <div className="rating-badge">
                   <i className="fa-solid fa-star"></i> 8.4/10
                 </div>
@@ -581,7 +581,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             {/* Movie 3 */}
             <article className="movie-card">
               <div className="card-thumb">
-                <img src="/public/hanuman-ansh.webp" alt="Hanuman Ansh" />
+                <img src="/hanuman-ansh.webp" alt="Hanuman Ansh" />
                 <div className="rating-badge">
                   <i className="fa-solid fa-star"></i> 9.0/10
                 </div>
@@ -606,7 +606,7 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
             {/* Movie 4 */}
             <article className="movie-card">
               <div className="card-thumb">
-                <img src="/public/irumudi.jpg" alt="Irumudi" />
+                <img src="/irumudi.jpg" alt="Irumudi" />
                 <div className="rating-badge">
                   <i className="fa-solid fa-star"></i> 8.2/10
                 </div>
@@ -814,9 +814,9 @@ function Home({ currentUser, onNavigateLogin, onNavigateDashboard, onLogout }) {
 
           <div className="coming-grid">
             {[
-              { id: 'joker', img: '/public/joker.jpg', title: 'Joker: Folie à Deux', release: 'Releasing Oct 4', censor: 'A', specs: 'English, Hindi' },
-              { id: 'venom', img: '/public/venom.jpg', title: 'Venom: The Last Dance', release: 'Releasing Oct 25', censor: 'UA', specs: 'English, Hindi, Telugu' },
-              { id: 'gladiator', img: '/public/gladiator.jpg', title: 'Gladiator II', release: 'Releasing Nov 22', censor: 'A', specs: 'English, Hindi' }
+              { id: 'joker', img: '/joker.jpg', title: 'Joker: Folie à Deux', release: 'Releasing Oct 4', censor: 'A', specs: 'English, Hindi' },
+              { id: 'venom', img: '/venom.jpg', title: 'Venom: The Last Dance', release: 'Releasing Oct 25', censor: 'UA', specs: 'English, Hindi, Telugu' },
+              { id: 'gladiator', img: '/gladiator.jpg', title: 'Gladiator II', release: 'Releasing Nov 22', censor: 'A', specs: 'English, Hindi' }
             ].map((mov) => (
               <div key={mov.id} className="coming-card">
                 <img src={mov.img} alt={mov.title} />
