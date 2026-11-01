@@ -11,7 +11,7 @@ function Theater2() {
                           autoRotateSpeed={1.0}
             
             />
-            <Environment files="earth.hdr"
+            <Environment files="/public/earth.hdr"
                          background
                          
                           

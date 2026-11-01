@@ -10,7 +10,7 @@ function Theater() {
   return (
 
 <Canvas>
-<Environment files="theater.hdr" background />
+<Environment files="/public/theater.hdr" background />
 <mesh>
     <OrbitControls 
     enableDamping={true}
